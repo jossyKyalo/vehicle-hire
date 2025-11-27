@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoConnect - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-content">
+        <a href="home.html" class="logo">
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+            <polygon points="12 15 17 21 7 21 12 15"></polygon>
+          </svg>
+          <span class="logo-text">AutoConnect</span>
+        </a>
+
+        <div class="nav-links desktop-nav">
+          <a href="vehicles.html" class="nav-link">Browse Vehicles</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+        </div>
+
+        <div class="nav-actions desktop-nav">
+          <a href="login.html" class="btn-text">Login</a>
+          <a href="register.html" class="btn-primary">Register</a>
+        </div>
+
+        <button class="mobile-menu-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Find Your Perfect Vehicle</h1>
+        <p class="hero-description">
+          Connect with trusted sellers and discover thousands of quality vehicles.
+          Your next car is just a click away.
+        </p>
+        <div class="hero-actions">
+          <a href="vehicles.html" class="btn-white">Browse Vehicles</a>
+          <a href="register.html" class="btn-outline-white">Sell Your Vehicle</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-card">
+        <div class="search-grid">
+          <input type="text" placeholder="Make or Model" class="search-input">
+          <select class="search-select">
+            <option>All Types</option>
+            <option>Sedan</option>
+            <option>SUV</option>
+            <option>Truck</option>
+            <option>Sports Car</option>
+          </select>
+          <select class="search-select">
+            <option>Price Range</option>
+            <option>Under $20,000</option>
+            <option>$20,000 - $50,000</option>
+            <option>$50,000 - $100,000</option>
+            <option>$100,000+</option>
+          </select>
+          <button class="btn-search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Vehicles -->
+  <section class="featured-section">
+    <div class="container">
+      <h2 class="section-title">Featured Vehicles</h2>
+      <div class="vehicles-grid">
+        <a href="vehicle-detail.html" class="vehicle-card">
+          <img src="https://images.unsplash.com/photo-1758217209786-95458c5d30a7?w=400" alt="2024 BMW X5" class="vehicle-image">
+          <div class="vehicle-info">
+            <h3 class="vehicle-title">2024 BMW X5</h3>
+            <p class="vehicle-price">$68,500</p>
+            <div class="vehicle-meta">
+              <span>2024</span>
+              <span>5,200 miles</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="vehicle-detail.html" class="vehicle-card">
+          <img src="https://images.unsplash.com/photo-1541348263662-e068662d82af?w=400" alt="2023 Porsche 911" class="vehicle-image">
+          <div class="vehicle-info">
+            <h3 class="vehicle-title">2023 Porsche 911</h3>
+            <p class="vehicle-price">$125,000</p>
+            <div class="vehicle-meta">
+              <span>2023</span>
+              <span>8,500 miles</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="vehicle-detail.html" class="vehicle-card">
+          <img src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?w=400" alt="2024 Tesla Model 3" class="vehicle-image">
+          <div class="vehicle-info">
+            <h3 class="vehicle-title">2024 Tesla Model 3</h3>
+            <p class="vehicle-price">$45,990</p>
+            <div class="vehicle-meta">
+              <span>2024</span>
+              <span>2,100 miles</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="text-center">
+        <a href="vehicles.html" class="btn-primary-lg">View All Vehicles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose AutoConnect -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title-center">Why Choose AutoConnect?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Secure Transactions</h3>
+          <p class="feature-description">
+            All transactions are secure and verified. We act as a trusted intermediary
+            to protect both buyers and sellers.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Verified Sellers</h3>
+          <p class="feature-description">
+            Every seller is verified and vetted. Browse with confidence knowing
+            you're dealing with legitimate sellers.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Best Prices</h3>
+          <p class="feature-description">
+            Competitive pricing with transparent fees. We charge a small 5% commission
+            to maintain our platform and provide excellent service.
+          </p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="how-it-works.html" class="link-primary">Learn more about our platform →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Get Started?</h2>
+        <p class="cta-description">
+          Join thousands of buyers and sellers on AutoConnect today
+        </p>
+        <div class="cta-actions">
+          <a href="register.html" class="btn-white">Create Account</a>
+          <a href="login.html" class="btn-outline-white">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

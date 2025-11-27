@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - AutoConnect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-content">
+        <a href="home.html" class="logo">
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+            <polygon points="12 15 17 21 7 21 12 15"></polygon>
+          </svg>
+          <span class="logo-text">AutoConnect</span>
+        </a>
+
+        <div class="nav-links desktop-nav">
+          <a href="vehicles.html" class="nav-link">Browse Vehicles</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+        </div>
+
+        <div class="nav-actions desktop-nav">
+          <a href="login.html" class="btn-text">Login</a>
+          <a href="register.html" class="btn-primary">Register</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="auth-container">
+    <div class="auth-box">
+      <div class="auth-header">
+        <svg class="auth-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+          <polygon points="12 15 17 21 7 21 12 15"></polygon>
+        </svg>
+        <h1 class="auth-title">Welcome Back</h1>
+        <p class="auth-description">Login to access your account</p>
+      </div>
+
+      <div class="auth-card">
+        <form class="auth-form">
+          <div class="form-group">
+            <label for="userType" class="form-label">I am a:</label>
+            <div class="user-type-grid">
+              <button type="button" class="user-type-btn active">Buyer</button>
+              <button type="button" class="user-type-btn">Seller</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+          </div>
+
+          <div class="form-row">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox">
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="link-primary-sm">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit">Login</button>
+        </form>
+
+        <div class="auth-footer">
+          <p class="auth-footer-text">
+            Don't have an account?
+            <a href="register.html" class="link-primary">Register here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Vehicles - AutoConnect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-content">
+        <a href="home.html" class="logo">
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+            <polygon points="12 15 17 21 7 21 12 15"></polygon>
+          </svg>
+          <span class="logo-text">AutoConnect</span>
+        </a>
+
+        <div class="nav-links desktop-nav">
+          <a href="vehicles.html" class="nav-link">Browse Vehicles</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+        </div>
+
+        <div class="nav-actions desktop-nav">
+          <a href="login.html" class="btn-text">Login</a>
+          <a href="register.html" class="btn-primary">Register</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page-container">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title">Browse Vehicles</h1>
+        <p class="page-description">Discover your next vehicle from our verified sellers</p>
+      </div>
+
+      <!-- Search and Filter -->
+      <div class="search-filter-card">
+        <div class="search-filter-main">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input type="text" placeholder="Search by make, model, or keyword..." class="search-input-full">
+          </div>
+          <button class="btn-filter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            Filters
+          </button>
+        </div>
+
+        <div class="filter-dropdown">
+          <select class="filter-select">
+            <option>All Types</option>
+            <option>Sedan</option>
+            <option>SUV</option>
+            <option>Truck</option>
+            <option>Sports Car</option>
+          </select>
+          <select class="filter-select">
+            <option>Price Range</option>
+            <option>Under $20,000</option>
+            <option>$20,000 - $50,000</option>
+            <option>$50,000 - $100,000</option>
+            <option>$100,000+</option>
+          </select>
+          <select class="filter-select">
+            <option>All Years</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+          </select>
+          <select class="filter-select">
+            <option>Mileage</option>
+            <option>Under 5,000</option>
+            <option>5,000 - 20,000</option>
+            <option>20,000 - 50,000</option>
+            <option>50,000+</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Results Count -->
+      <div class="results-count">
+        <p class="results-text">6 vehicles found</p>
+      </div>
+
+      <!-- Vehicle Grid -->
+      <div class="vehicles-grid-full">
+        <a href="vehicle-detail.html" class="vehicle-card-large">
+          <img src="https://images.unsplash.com/photo-1758217209786-95458c5d30a7?w=400" alt="2024 BMW X5" class="vehicle-image-large">
+          <div class="vehicle-info-large">
+            <div class="vehicle-header">
+              <h3 class="vehicle-title-large">2024 BMW X5</h3>
+              <span class="vehicle-badge">SUV</span>
+            </div>
+            <p class="vehicle-price-large">$68,500</p>
+            <div class="vehicle-details">
+              <div class="detail-row">
+                <span class="detail-label">Year:</span>
+                <span class="detail-value">2024</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Mileage:</span>
+                <span class="detail-value">5,200 miles</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Location:</span>
+                <span class="detail-value">New York, NY</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="vehicle-detail.html" class="vehicle-card-large">
+          <img src="https://images.unsplash.com/photo-1541348263662-e068662d82af?w=400" alt="2023 Porsche 911" class="vehicle-image-large">
+          <div class="vehicle-info-large">
+            <div class="vehicle-header">
+              <h3 class="vehicle-title-large">2023 Porsche 911</h3>
+              <span class="vehicle-badge">Sports Car</span>
+            </div>
+            <p class="vehicle-price-large">$125,000</p>
+            <div class="vehicle-details">
+              <div class="detail-row">
+                <span class="detail-label">Year:</span>
+                <span class="detail-value">2023</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Mileage:</span>
+                <span class="detail-value">8,500 miles</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Location:</span>
+                <span class="detail-value">Los Angeles, CA</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="vehicle-detail.html" class="vehicle-card-large">
+          <img src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?w=400" alt="2024 Tesla Model 3" class="vehicle-image-large">
+          <div class="vehicle-info-large">
+            <div class="vehicle-header">
+              <h3 class="vehicle-title-large">2024 Tesla Model 3</h3>
+              <span class="vehicle-badge">Sedan</span>
+            </div>
+            <p class="vehicle-price-large">$45,990</p>
+            <div class="vehicle-details">
+              <div class="detail-row">
+                <span class="detail-label">Year:</span>
+                <span class="detail-value">2024</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Mileage:</span>
+                <span class="detail-value">2,100 miles</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Location:</span>
+                <span class="detail-value">San Francisco, CA</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="vehicle-detail.html" class="vehicle-card-large">
+          <img src="https://images.unsplash.com/photo-1657256985338-ce188774d199?w=400" alt="2023 Ford F-150" class="vehicle-image-large">
+          <div class="vehicle-info-large">
+            <div class="vehicle-header">
+              <h3 class="vehicle-title-large">2023 Ford F-150</h3>
+              <span class="vehicle-badge">Truck</span>
+            </div>
+            <p class="vehicle-price-large">$52,300</p>
+            <div class="vehicle-details">
+              <div class="detail-row">
+                <span class="detail-label">Year:</span>
+                <span class="detail-value">2023</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Mileage:</span>
+                <span class="detail-value">15,400 miles</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Location:</span>
+                <span class="detail-value">Austin, TX</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="vehicle-detail.html" class="vehicle-card-large">
+          <img src="https://images.unsplash.com/photo-1658662160331-62f7e52e63de?w=400" alt="2024 Mercedes-Benz S-Class" class="vehicle-image-large">
+          <div class="vehicle-info-large">
+            <div class="vehicle-header">
+              <h3 class="vehicle-title-large">2024 Mercedes-Benz S-Class</h3>
+              <span class="vehicle-badge">Sedan</span>
+            </div>
+            <p class="vehicle-price-large">$115,000</p>
+            <div class="vehicle-details">
+              <div class="detail-row">
+                <span class="detail-label">Year:</span>
+                <span class="detail-value">2024</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Mileage:</span>
+                <span class="detail-value">3,800 miles</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Location:</span>
+                <span class="detail-value">Miami, FL</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="vehicle-detail.html" class="vehicle-card-large">
+          <img src="https://images.unsplash.com/photo-1605801936998-a39a1518b03c?w=400" alt="2022 Audi Q7" class="vehicle-image-large">
+          <div class="vehicle-info-large">
+            <div class="vehicle-header">
+              <h3 class="vehicle-title-large">2022 Audi Q7</h3>
+              <span class="vehicle-badge">SUV</span>
+            </div>
+            <p class="vehicle-price-large">$58,700</p>
+            <div class="vehicle-details">
+              <div class="detail-row">
+                <span class="detail-label">Year:</span>
+                <span class="detail-value">2022</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Mileage:</span>
+                <span class="detail-value">22,100 miles</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Location:</span>
+                <span class="detail-value">Chicago, IL</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
